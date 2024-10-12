@@ -678,24 +678,16 @@ video {
   height: 1.25rem;
 }
 
-.h-9 {
-  height: 2.25rem;
+.h-7 {
+  height: 1.75rem;
 }
 
 .h-96 {
   height: 24rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-7 {
-  height: 1.75rem;
 }
 
 .w-10 {
@@ -728,22 +720,6 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  animation: bounce var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
 }
 
 .resize {
@@ -1212,11 +1188,6 @@ video {
   animation-iteration-count: var(--tw-animate-iteration);
 }
 
-.animate-thrice {
-  --tw-animate-iteration: 3;
-  animation-iteration-count: var(--tw-animate-iteration);
-}
-
 /** FONTS **/
 
 @font-face {
@@ -1382,6 +1353,20 @@ div.slick-dotted.slick-slider {
   --tw-ring-color: rgb(253 224 71 / var(--tw-ring-opacity));
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.intersect\:animate-fade:not([no-intersect]) {
+  animation: fade var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -1396,26 +1381,6 @@ div.slick-dotted.slick-slider {
 
 .intersect\:animate-fade-up:not([no-intersect]) {
   animation: fade-up var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.intersect\:animate-bounce:not([no-intersect]) {
-  animation: bounce var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
-}
-
-.intersect\:opacity-100:not([no-intersect]) {
-  opacity: 1;
 }
 
 @media (min-width: 768px) {
