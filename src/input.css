@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/** FONTS **/
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 300;
+    src: url("fonts/Inter_Light.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url("fonts/Inter_Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url("fonts/Inter_Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url("fonts/Inter_SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url("fonts/Inter_Bold.ttf");
+}
+
+/** Carousel **/
+.training-slick .slick-list {
+    overflow: visible;
+}
+
+.training-slick .slick-list .slick-slide {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.training-slick .slick-list .slick-slide.slick-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+button.slick-prev:before, button.slick-next:before {
+    display: none;
+}
+
+.slick-slider button.slick-prev, .slick-slider button.slick-next {
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    z-index: 5555;
+    opacity: .8;
+    transition: all ease .4s;
+}
+
+.slick-slider button.slick-next, .slick-slider button.slick-next:hover, .slick-slider button.slick-next:focus {
+    background-image: url('img/slick-next.png');
+}
+
+.slick-slider button.slick-prev, .slick-slider button.slick-prev:hover, .slick-slider button.slick-prev:focus {
+    background-image: url('img/slick-prev.png');
+}
+
+.slick-slider button.slick-next:hover, .slick-slider button.slick-prev:hover {
+    opacity: 1;
+}
+
+.slick-slider button.slick-prev.slick-disabled, .slick-slider button.slick-next.slick-disabled {
+    opacity: .1;
+}
+
+div.slick-dotted.slick-slider {
+    margin-bottom: 90px;
+}
+
+.slick-slider ul.slick-dots {
+    bottom: -50px;
+}
+
+.slick-slider .slick-dots li.slick-active button:before {
+    color: #ffb600;
+    opacity: 1;
+}
+
+.slick-slider .slick-dots li button:before {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #cfcfcf;
+}
