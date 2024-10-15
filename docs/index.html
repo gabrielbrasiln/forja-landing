@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br" class="scroll-smooth focus:scroll-auto">
 <head>
+  <title>Escola Forja - Formação de Tech Leaders</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
@@ -11,6 +12,11 @@
   <script src="js/observer.min.js"></script>
    <!-- jQuery -->
   <script src="js/jquery.min.js"></script>
+
+  <link rel="icon" href="img/favicon.svg" sizes="32x32" />
+  <link rel="icon" href="img/favicon.svg" sizes="192x192" />
+  <link rel="apple-touch-icon" href="img/favicon.svg" />
+  <meta name="msapplication-TileImage" content="img/favicon.svg" />
 </head>
 
 <body class="bg-main-bg">
@@ -65,7 +71,7 @@
 </nav>
 
 <!-- Sobre -->
-<section id="sobre" class="bg-hero bg-no-repeat bg-[center_bottom] bg-[length:1280px_auto]">
+<section id="sobre" class="bg-hero bg-no-repeat bg-[center_10px] bg-[length:1740px_auto] relative">
   <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-28 relative">
       <h1 class="text-6xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 animate-duration-1000 intersect-once intersect-full">
         Aprenda com os
@@ -105,20 +111,21 @@
       <img src="./img/app.jpg" alt="Imagem do app da forja">
     </div>
 
-    <div class="absolute bg-gradient-to-t from-main-bg via-main-bg/80 to-main-bg/0 h-96 w-full bottom-0"></div>
     
   </div>
+  
+  <div class="absolute bg-gradient-to-t from-main-bg via-main-bg/80 to-main-bg/0 h-96 w-full bottom-0"></div>
 </section>
 
 <!-- Treinamentos -->
- <section id="treinamentos" class="w-full overflow-hidden">
+<section id="treinamentos" class="w-full overflow-hidden">
   <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
     <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
       Confira os treinamentos<br>
       <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">da sua formação em Liderança Tech</span>
     </h1>
-
   </div>
+
   <div class="max-w-screen-xl block mx-auto relative opacity-0 intersect:animate-fade animate-once animate-delay-300 intersect-once intersect-half">
 
     <div class="training-slick text-white my-14">
@@ -445,37 +452,281 @@
   </div>
  </section>
 
+<!-- Planos -->
+<section id="planos" class="w-full overflow-hidden">
+  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
+    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+      Junte-se a nossa<br>
+      <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">comunidade de líderes</span>
+    </h1>
+
+    <p class="max-w-screen-md mx-auto my-10 text-white font-light text-2xl text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 animate-duration-1000 intersect-once intersect-full">
+      Junte-se ao nosso hub e tenha acesso a treinamentos exclusivos, cases reais, networking, dicas valiosas e muito mais!
+    </p>
+
+    <div class="flex w-full justify-center gap-x-9 my-20 opacity-0 intersect:animate-fade animate-once animate-delay-1000 intersect-once intersect-half">
+
+      <!-- Plano Gratuito -->
+      <div class="bg-neutral-900 flex flex-col  w-full max-w-[350px] border border-white/30 rounded-xl p-5 hover:scale-110 transition duration-500">
+        <h2 class="text-white text-2xl font-medium px-2 mb-2">
+          Gratuita
+        </h2>
+        <h3 class="text-white text-xl font-light px-2">
+          Venha para Forja
+        </h3>
+        
+        <hr class="border-primary my-6">
+
+        <ul class="text-white pl-2 check-list grow">
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Aulas gravadas</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Indicações de podcast</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Link úteis</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Dicas de livros</li>
+        </ul>
+
+        <button type="button" class="text-black font-semibold bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-4 py-3 mb-4 text-center">
+          Criar conta grátis
+        </button>
+
+      </div>
+
+      <!-- Plano Full Immersion -->
+      <div class="bg-neutral-900 flex flex-col  w-full max-w-[350px] border-2 border-primary rounded-xl p-5 hover:scale-110 transition duration-500 -my-10">
+        <h2 class="text-primary text-2xl font-medium px-2 mb-2 mb-2">
+          Full Immersion
+        </h2>
+        <h3 class="text-primary text-xl font-bold px-2 mb-1">
+          12x R$349,90
+        </h3>
+        <h3 class="text-white text-md font-light px-2">
+          Melhor custo-benefício
+        </h3>
+        
+        <hr class="border-primary my-6">
+
+        <ul class="text-white pl-2 check-list grow mb-3">
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Todo acervo da Escola Forja</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Masterclasses, Workshops</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Cases reais</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Mentoria mensal</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">10+ treinamentos completos</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Livro “De Dev a Tech Lead”</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Acesso gratuito a conferências da Forja</li>
+          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Desconto na renovação</li>
+        </ul>
+
+        <button type="button" class="text-black font-semibold bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-4 py-3 mb-4 text-center">
+          Quero acesso completo!
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="depoimentos" class="w-full overflow-hidden">
+  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
+    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+      O que dizem sobre<br>
+      <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">a escola Forja</span>
+    </h1>
+  </div>
+
+  <div class="max-w-screen-xl block mx-auto relative">
+
+    <div class="testimonial-slick my-14 opacity-0 intersect:animate-fade animate-once animate-delay-300 intersect-once intersect-half" >
+
+      <!-- Depoimento 1 -->
+      <div class="hover:scale-105 transition duration-300 p-3 group !flex flex-col !flex flex-col">
+        <div class="bg-primary flex flex-col rounded-t-md p-6 grow">
+          <div class="h-7 mb-3">
+            <img src="img/icon-quote.svg" alt="">
+          </div>
+        
+          <p class="text-black text-md pb-8">
+            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus. Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+          </p>
+        </div>
+          
+        <div class="bg-neutral-900 rounded-b-md flex flex-col items-center pb-6">
+          <div class="w-20 h-20 bg-neutral-700 rounded-full overflow-hidden -mt-10 mb-3 saturate-0 group-hover:saturate-100 transition duration-300">
+            <img src="img/testimonial-01.jpg" alt="Foto de ">
+          </div>
+          <p class="text-white uppercase font-name tracking-widest">
+            Suzana
+          </p>
+        </div>
+      </div>
+
+      <!-- Depoimento 2 -->
+      <div class="hover:scale-105 transition duration-300 p-3 group !flex flex-col">
+        <div class="bg-primary flex flex-col rounded-t-md p-6 grow">
+          <div class="h-7 mb-3">
+            <img src="img/icon-quote.svg" alt="">
+          </div>
+        
+          <p class="text-black text-md pb-8">
+            Elit sociis consequat venenatis justo. Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus. Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+          </p>
+        </div>
+          
+        <div class="bg-neutral-900 rounded-b-md flex flex-col items-center pb-6">
+          <div class="w-20 h-20 bg-neutral-700 rounded-full overflow-hidden -mt-10 mb-3 saturate-0 group-hover:saturate-100 transition duration-300">
+            <img src="img/testimonial-01.jpg" alt="Foto de ">
+          </div>
+          <p class="text-white uppercase font-name tracking-widest">
+            Suzana
+          </p>
+        </div>
+      </div>
+      
+      <!-- Depoimento 3 -->
+      <div class="hover:scale-105 transition duration-300 p-3 group !flex flex-col">
+        <div class="bg-primary flex flex-col rounded-t-md p-6 grow">
+          <div class="h-7 mb-3">
+            <img src="img/icon-quote.svg" alt="">
+          </div>
+        
+          <p class="text-black text-md pb-8">
+            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+          </p>
+        </div>
+          
+        <div class="bg-neutral-900 rounded-b-md flex flex-col items-center pb-6">
+          <div class="w-20 h-20 bg-neutral-700 rounded-full overflow-hidden -mt-10 mb-3 saturate-0 group-hover:saturate-100 transition duration-300">
+            <img src="img/testimonial-01.jpg" alt="Foto de ">
+          </div>
+          <p class="text-white uppercase font-name tracking-widest">
+            Suzana
+          </p>
+        </div>
+      </div>
+
+      <!-- Depoimento 4 -->
+      <div class="hover:scale-105 transition duration-300 p-3 group !flex flex-col">
+        <div class="bg-primary flex flex-col rounded-t-md p-6 grow">
+          <div class="h-7 mb-3">
+            <img src="img/icon-quote.svg" alt="">
+          </div>
+        
+          <p class="text-black text-md pb-8">
+            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus. Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+          </p>
+        </div>
+          
+        <div class="bg-neutral-900 rounded-b-md flex flex-col items-center pb-6">
+          <div class="w-20 h-20 bg-neutral-700 rounded-full overflow-hidden -mt-10 mb-3 saturate-0 group-hover:saturate-100 transition duration-300">
+            <img src="img/testimonial-01.jpg" alt="Foto de ">
+          </div>
+          <p class="text-white uppercase font-name tracking-widest">
+            Suzana
+          </p>
+        </div>
+      </div>
+
+      <!-- Depoimento 5 -->
+      <div class="hover:scale-105 transition duration-300 p-3 group !flex flex-col">
+        <div class="bg-primary flex flex-col rounded-t-md p-6 grow">
+          <div class="h-7 mb-3">
+            <img src="img/icon-quote.svg" alt="">
+          </div>
+        
+          <p class="text-black text-md pb-8">
+            Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo sed aenean amet lacus. Lorem ipsum dolor sit amet consectetur. Elit sociis consequat venenatis justo.
+          </p>
+        </div>
+          
+        <div class="bg-neutral-900 rounded-b-md flex flex-col items-center pb-6">
+          <div class="w-20 h-20 bg-neutral-700 rounded-full overflow-hidden -mt-10 mb-3 saturate-0 group-hover:saturate-100 transition duration-300">
+            <img src="img/testimonial-01.jpg" alt="Foto de ">
+          </div>
+          <p class="text-white uppercase font-name tracking-widest">
+            Suzana
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Vídeo -->
+    <div class="max-w-4xl py-6 px-3 mt-36 rounded-xl border-2 border-primary mx-auto opacity-0 intersect:animate-fade-down animate-once animate-delay-300 intersect-once intersect-half">
+      <iframe width="864" height="470" class="max-w-full" src="https://www.youtube.com/embed/mG_rZCSGfoY?si=x009jam6OnnYIf3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="w-full flex justify-center my-16">
+      <button type="button" class="text-black font-medium bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-md px-4 py-3 mb-4 text-center">
+        Agendar uma demonstração
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
  <script type="text/javascript" src="slick/slick.min.js"></script>
 
  <script>
+  
+  $('.training-slick').slick({
+      arrows: true,
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 2500,
+      pauseOnHover: true,
+      infinite: false,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+          slidesToShow: 2,
+          infinite: true
+          }
+      },
+      {
+          breakpoint: 767,
+          settings: {
+          slidesToShow: 1,
+          }
+      },
 
-    $('.training-slick').slick({
-        arrows: true,
-        dots: true,
-        autoplay: false,
-        autoplaySpeed: 2500,
-        pauseOnHover: true,
-        infinite: false,
-        speed: 700,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-            slidesToShow: 2,
-            infinite: true
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-            slidesToShow: 1,
-            }
-        },
+      ]
+  });
 
-        ]
-    });
+  $('.testimonial-slick').slick({
+      arrows: true,
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 2500,
+      pauseOnHover: true,
+      infinite: false,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+          slidesToShow: 2,
+          infinite: true
+          }
+      },
+      {
+          breakpoint: 767,
+          settings: {
+          slidesToShow: 1,
+          }
+      },
+
+      ]
+  });
  </script>
 </body>
 </html>

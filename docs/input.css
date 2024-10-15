@@ -35,6 +35,12 @@
     src: url("fonts/Inter_Bold.ttf");
 }
 
+@font-face {
+    font-family: 'Lexend Peta';
+    font-weight: 500;
+    src: url("fonts/LexendPeta-Medium.ttf");
+}
+
 /** Carousel **/
 .training-slick .slick-list {
     overflow: visible;
@@ -99,4 +105,13 @@ div.slick-dotted.slick-slider {
     height: 30px;
     font-size: 16px;
     color: #cfcfcf;
+}
+
+.testimonial-slick .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.testimonial-slick .slick-slide {
+    height: unset;
 }

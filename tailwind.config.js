@@ -13,9 +13,13 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
+        'name': ['"Lexend Peta"'],
       },
       backgroundImage: {
         'hero': "url('./img/bg-hero.jpg')",
+      },
+      letterSpacing: {
+        widest: '.25em',
       }
     },
   },
