@@ -23,7 +23,7 @@
   
 <!-- Navbar -->
 <nav class="w-full">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 lg:px-16 mt-8">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-2 lg:px-4 xl:px-16 mt-4 xl:mt-8">
     
     <!-- Logo -->
     <a href="index.html" class="flex">
@@ -31,17 +31,17 @@
     </a>
 
     <!-- Botões do Menu -->
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-x-5">
+    <div class="flex lg:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:gap-x-3 lg:gap-x-5">
 
-        <button type="button" class="text-primary font-semibold bg-transparent border border-primary hover:bg-yellow-600 hover:text-black hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-11 py-2 text-center">
+        <button type="button" class="text-primary font-semibold bg-transparent border border-primary hover:bg-yellow-600 hover:text-black hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-sm md:text-md lg:text-lg px-6 md:px-8 lg:px-11 py-2 text-center">
           Entrar
         </button>
         
-        <button type="button" class="text-black font-semibold bg-primary border border-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300	text-lg px-6 py-2 text-center">
+        <button type="button" class="text-black font-semibold bg-primary border border-primary px-2 md:px-4 lg:px-6 py-2 text-center hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300	text-sm md:text-md lg:text-lg">
           Criar conta
         </button>
 
-        <button data-collapse-toggle="main-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="main-menu" aria-expanded="false">
+        <button type="button" class="navbar-burger inline-flex items-center p-2 !ml-1 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none hover:text-primary" aria-expanded="false">
           <span class="sr-only">Abrir menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -50,8 +50,8 @@
     </div>
     
     <!-- Menu Principal -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="main-menu">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-normal rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0">
+    <div class="main-menu items-center max-h-0 overflow-hidden w-full lg:flex lg:w-auto lg:order-1 lg:max-h-screen transition-all duration-700">
+      <ul class="flex flex-col p-4 lg:p-0 mt-4 font-normal text-center lg:text-left rounded-lg lg:space-x-2 xl:space-x-4 rtl:space-x-reverse lg:flex-row lg:mt-0">
         <li>
           <a href="#sobre" class="block py-2 px-3 text-white hover:text-primary transition-all">Sobre a Forja</a>
         </li>
@@ -72,31 +72,31 @@
 
 <!-- Sobre -->
 <section id="sobre" class="bg-hero bg-no-repeat bg-[center_10px] bg-[length:1740px_auto] relative">
-  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-28 relative">
-    <h1 class="text-6xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 animate-duration-1000 intersect-once intersect-full">
+  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-10 md:pt-16 lg:pt-28 px-3 relative">
+    <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 animate-duration-1000 intersect-once intersect-full">
       Aprenda com os
     </h1>
-    <h1 class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text text-6xl font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-300 animate-duration-1000 intersect-once intersect-full">
+    <h1 class="bg-gradient-to-t text-2xl sm:text-4xl md:text-5xl lg:text-6xl from-primary leading-snug md:!leading-tight to-white text-transparent bg-clip-text font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-300 animate-duration-1000 intersect-once intersect-full">
       maiores líderes de tecnologia
     </h1>
 
-    <p class="max-w-screen-md mx-auto mt-6 text-white font-light text-2xl text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 animate-duration-1000 intersect-once intersect-full">
+    <p class="max-w-screen-md mx-auto mt-6 text-white font-light text-lg md:text-xl lg:text-2xl text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 animate-duration-1000 intersect-once intersect-full">
       Junte-se ao nosso hub e tenha acesso a treinamentos exclusivos, cases reais, networking, dicas valiosas e muito mais!
     </p>
     
     <!-- Call to action -->
     <div class="flex justify-center gap-x-7 mt-10 opacity-0 intersect:animate-fade-up animate-once animate-delay-700 animate-duration-1000 intersect-once intersect-full">
-      <button type="button" class="text-black font-semibold bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-12 py-3 text-center">
+      <button type="button" class="text-black font-semibold bg-primary text-md md:text-lg px-3 md:px-6 lg:px-12 py-3 text-center hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out">
         Criar conta grátis
       </button>
       
-      <button type="button" class="text-gray-900 font-semibold bg-white hover:bg-gray-300 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300	text-lg px-20 py-2 text-center">
+      <button type="button" class="text-gray-900 font-semibold bg-white text-md md:text-lg px-4 md:px-8 lg:px-20 py-2 text-center hover:bg-gray-300 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300">
         Ver planos
       </button>
     </div>
 
     <!-- Marcas -->
-    <div class="flex flex-wrap justify-center gap-x-9 gap-y-6 mt-24 pt-6 opacity-0 intersect:animate-fade-up animate-once animate-delay-1000 animate-duration-1000 intersect-once intersect-full">
+    <div class="flex flex-wrap justify-center gap-x-9 gap-y-6 mt-16 lg:mt-24 pt-6 opacity-0 intersect:animate-fade-up animate-once animate-delay-1000 animate-duration-1000 intersect-once intersect-full">
       <img src="./img/brand_netflix.svg" alt="Logo - Netflix">
       <img src="./img/brand_nu.svg" alt="Logo - Nubank">
       <img src="./img/brand_sumup.svg" alt="Logo - Sumup">
@@ -119,14 +119,14 @@
 
 <!-- Treinamentos -->
 <section id="treinamentos" class="w-full overflow-hidden">
-  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
-    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-10 lg:pt-20 relative px-3">
+    <h1 class="text-2xl md:text-4xl lg:text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
       Confira os treinamentos<br>
       <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">da sua formação em Liderança Tech</span>
     </h1>
   </div>
 
-  <div class="max-w-screen-xl block mx-auto relative opacity-0 intersect:animate-fade animate-once animate-delay-300 intersect-once intersect-half">
+  <div class="max-w-screen-xl block mx-auto px-8 relative opacity-0 intersect:animate-fade animate-once animate-delay-300 intersect-once intersect-half">
 
     <div class="training-slick text-white my-14">
 
@@ -144,7 +144,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-01.png" alt="Foto de Eduardo Matos">
@@ -161,7 +161,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Liderança de Equipe
           </div>
 
@@ -182,7 +182,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-02.png" alt="Foto de Carlos Sena">
@@ -199,7 +199,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Jornada de Dados
           </div>
 
@@ -224,7 +224,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-03.png" alt="Foto de Luciano Holanda">
@@ -241,7 +241,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Tomada de Decisão
           </div>
 
@@ -262,7 +262,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-04.png" alt="Foto de Alexaner Jardim">
@@ -279,7 +279,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Liderança Técnica Estratégica
           </div>
 
@@ -303,7 +303,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-05.png" alt="Foto de Wilson Júnior">
@@ -320,7 +320,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Migração de 3k Apps para Nuvem
           </div>
 
@@ -341,7 +341,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-06.png" alt="Foto de Thiago Ghisi">
@@ -358,7 +358,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Crescimento na Trilha de Liderança
           </div>
 
@@ -383,7 +383,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-07.png" alt="Foto de Bianca Pereira">
@@ -400,7 +400,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Facilitação de Discussões em Equipe
           </div>
 
@@ -421,7 +421,7 @@
             </div>
           </div>
 
-          <div class="flex gap-x-4 mt-10">
+          <div class="flex gap-x-4 mt-4 lg:mt-10">
 
             <div class="w-16 h-16 border-2 border-primary bg-neutral-700 rounded-full overflow-hidden pt-1">
               <img src="img/profile-08.png" alt="Foto de Joel Backschat">
@@ -438,7 +438,7 @@
 
           </div>
 
-          <div class="text-primary text-3xl text-medium my-8 h-16">
+          <div class="text-primary text-xl md:text-2xl lg:text-3xl text-medium my-4 lg:my-8 md:h-14 lg:h-16">
             Budgeting para Líderes da Tecnologia
           </div>
 
@@ -454,20 +454,20 @@
 
 <!-- Planos -->
 <section id="planos" class="w-full overflow-hidden">
-  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
-    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+  <div class=" px-3">
+    <h1 class="text-2xl md:text-4xl lg:text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
       Junte-se a nossa<br>
       <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">comunidade de líderes</span>
     </h1>
 
-    <p class="max-w-screen-sm mx-auto my-10 text-white font-light text-xl text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 animate-duration-1000 intersect-once intersect-full">
+    <p class="max-w-screen-sm mx-auto my-10 text-white font-light text-lg lg:text-xl text-center opacity-0 intersect:animate-fade-up animate-once animate-delay-500 animate-duration-1000 intersect-once intersect-full">
       Tenha acesso a treinamentos exclusivos, cases reais, networking, dicas valiosas e muito mais!
     </p>
 
-    <div class="flex w-full justify-center gap-x-9 my-20 opacity-0 intersect:animate-fade animate-once animate-delay-1000 intersect-once intersect-half">
+    <div class="flex flex-wrap w-full justify-center gap-x-9 my-12 lg:my-20 opacity-0 intersect:animate-fade animate-once animate-delay-1000 intersect-once intersect-half">
 
       <!-- Plano Gratuito -->
-      <div class="bg-neutral-900 flex flex-col  w-full max-w-[350px] border border-white/30 rounded-xl p-5 hover:scale-110 transition duration-500">
+      <div class="bg-neutral-900 flex flex-col  w-full sm:max-w-[350px] border border-white/30 rounded-xl p-5 md:hover:scale-110 transition duration-500">
         <h2 class="text-white text-2xl font-medium px-2 mb-2">
           Gratuita
         </h2>
@@ -475,23 +475,23 @@
           Venha para Forja
         </h3>
         
-        <hr class="border-primary my-6">
+        <hr class="border-primary my-3 md:my-6">
 
         <ul class="text-white pl-2 check-list grow">
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Aulas gravadas</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Indicações de podcast</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Link úteis</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Dicas de livros</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Aulas gravadas</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Indicações de podcast</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Link úteis</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Dicas de livros</li>
         </ul>
 
-        <button type="button" class="text-black font-semibold bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-4 py-3 mb-4 text-center">
+        <button type="button" class="text-black font-semibold bg-primary text-md lg:text-lg px-2 md:px-4 py-2 md:py-3 mb-4 text-center hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out">
           Criar conta grátis
         </button>
 
       </div>
 
       <!-- Plano Full Immersion -->
-      <div class="bg-neutral-900 flex flex-col  w-full max-w-[350px] border-2 border-primary rounded-xl p-5 hover:scale-110 transition duration-500 -my-10">
+      <div class="bg-neutral-900 flex flex-col  w-full sm:max-w-[350px] border-2 border-primary rounded-xl p-5 md:hover:scale-110 transition duration-500 my-8 sm:-my-10">
         <h2 class="text-primary text-2xl font-medium px-2 mb-2 mb-2">
           Full Immersion
         </h2>
@@ -502,20 +502,20 @@
           Melhor custo-benefício
         </h3>
         
-        <hr class="border-primary my-6">
+        <hr class="border-primary my-3 md:my-6">
 
         <ul class="text-white pl-2 check-list grow mb-3">
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Todo acervo da Escola Forja</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Masterclasses, Workshops</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Cases reais</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Mentoria mensal</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">10+ treinamentos completos</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Livro “De Dev a Tech Lead”</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Acesso gratuito a conferências da Forja</li>
-          <li class="flex mb-4"><img class="mr-2" src="img/icon-check.svg">Desconto na renovação</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Todo acervo da Escola Forja</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Masterclasses, Workshops</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Cases reais</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Mentoria mensal</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">10+ treinamentos completos</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Livro “De Dev a Tech Lead”</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Acesso gratuito a conferências da Forja</li>
+          <li class="flex mb-2 md:mb-4"><img class="mr-2" src="img/icon-check.svg">Desconto na renovação</li>
         </ul>
 
-        <button type="button" class="text-black font-semibold bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-lg px-4 py-3 mb-4 text-center">
+        <button type="button" class="text-black font-semibold bg-primary text-md lg:text-lg px-2 md:px-4 py-2 md:py-3 mb-4 text-center hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out">
           Quero acesso completo!
         </button>
 
@@ -528,14 +528,14 @@
 
 <!-- Depoimentos -->
 <section id="depoimentos" class="w-full overflow-hidden">
-  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-20 relative">
-    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+  <div class=" px-3">
+    <h1 class="text-2xl md:text-4xl lg:text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
       O que dizem sobre<br>
       <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">a escola Forja</span>
     </h1>
   </div>
 
-  <div class="max-w-screen-xl block mx-auto relative">
+  <div class="max-w-screen-xl block mx-auto relative px-8">
 
     <div class="testimonial-slick my-14 opacity-0 intersect:animate-fade animate-once animate-delay-300 intersect-once intersect-half" >
 
@@ -657,7 +657,7 @@
       <iframe width="864" height="470" class="max-w-full" src="https://www.youtube.com/embed/mG_rZCSGfoY?si=x009jam6OnnYIf3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div class="w-full flex justify-center my-16">
+    <div class="w-full flex justify-center my-6 md:my-16">
       <button type="button" class="text-black font-medium bg-primary hover:bg-yellow-600 hover:scale-105 focus:ring-2 focus:outline-none focus:ring-yellow-300 rounded-full transition duration-300 ease-in-out	text-md px-4 py-3 mb-4 text-center">
         Agendar uma demonstração
       </button>
@@ -669,8 +669,8 @@
 
 <!-- Acervo -->
 <section id="acervo">
-  <div class="max-w-screen-xl flex flex-col items-center mx-auto pt-28 relative">
-    <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+  <div class="max-w-screen-xl flex flex-col items-center px-8 mx-auto pt-4 lg:pt-28 relative">
+    <h1 class="text-2xl md:text-4xl lg:text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
       Faça parte e tenha acesso<br>
       <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">
         a todo acervo da escola Forja
@@ -678,20 +678,20 @@
     </h1>
 
     <!-- Ebook -->
-    <div class="bg-neutral-900 flex w-full  max-w-5xl mt-32 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
+    <div class="bg-neutral-900 flex flex-wrap w-full  max-w-5xl mt-20 lg:mt-32 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
 
-      <div class="w-2/5">
-        <img class="mx-auto -mt-16" src="img/ebook.png" alt="Imagem de um ebook chamado De dev a tech lead">
+      <div class="w-full sm:w-2/5">
+        <img class="mx-auto -mt-16 w-40 sm:w-full" src="img/ebook.png" alt="Imagem de um ebook chamado De dev a tech lead">
       </div>
 
       
-      <div class="w-3/5 flex flex-col items-start pt-16 px-16">
+      <div class="w-full sm:w-3/5 flex flex-col items-start pt-8 px-0 sm:pt-16 sm:px-16">
 
         <h2 class="text-primary text-xl font-bold mb-1">
           BONUS EBOOK + AUDIOBOOK
         </h2>
 
-        <p class="max-w-screen-sm mx-auto my-8 text-white font-light text-xl">
+        <p class="max-w-screen-sm mx-auto my-4 md:my-8 text-white font-light text-md md:text-xl">
           Receba de bônus o livro que vai te ajudar a alcançar um próximo nível de liderança. Ele fala essencialmente sobre como pensar, agir e se relacionar, e esses atributos são universais de um tech leader.
         </p>
         
@@ -703,36 +703,36 @@
     </div>
 
     <!-- Certificado -->
-    <div class="bg-neutral-900 flex w-full  max-w-5xl mt-32 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
+    <div class="bg-neutral-900 flex flex-wrap w-full  max-w-5xl mt-10 md:mt-20 lg:mt-32 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
       
-      <div class="w-3/5 flex flex-col items-start pt-16 px-16">
+      <div class="w-full sm:w-3/5 flex flex-col items-start pt-8 px-0 sm:pt-16 sm:px-16">
 
         <h2 class="text-primary text-xl font-bold mb-1">
           CERTIFICADO DE CONCLUSÃO
         </h2>
 
-        <p class="max-w-screen-sm mx-auto my-8 text-white font-light text-xl">
+        <p class="max-w-screen-sm mx-auto my-4 md:my-8 text-white font-light text-md md:text-xl">
           Após a conclusão da sua formação em nossa escola você receberá o Certificado de Conclusão com validação para seu perfil do LinkedIn
         </p>
       </div>
 
-      <div class="w-2/5 pr-6  ">
+      <div class="w-full sm:w-2/5 pr-6  ">
         <img class="mx-auto mt-4" src="img/certificado.png" alt="Imagem de um certificado de conclusão">
       </div>
     
     </div>
 
     <!-- Plataforma -->
-    <div class="bg-neutral-900 flex w-full  max-w-5xl mt-44 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
+    <div class="bg-neutral-900 flex flex-wrap w-full  max-w-5xl mt-10 sm:mt-44 border border-white/30 rounded-xl p-5 opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-half">
 
       
-      <div class="w-3/5 flex flex-col items-start pt-16 px-16">
+      <div class="w-full sm:w-3/5 flex flex-col items-start pt-8 px-0 sm:pt-16 sm:px-16">
         
         <h2 class="text-primary text-xl font-bold mb-1">
           PLATAFORMA RESPONSIVA
         </h2>
         
-        <p class="max-w-screen-sm mx-auto my-8 text-white font-light text-xl">
+        <p class="max-w-screen-sm mx-auto my-4 md:my-8 text-white font-light text-md md:text-xl">
           Tenha uma experiência fluida e otimizada em qualquer dispositivo, mantendo-se sempre atualizado com nosso conteúdo, onde quer que você esteja.
         </p>
         
@@ -741,8 +741,8 @@
         </button>
       </div>
 
-      <div class="w-2/5">
-        <img class="mx-auto mt-[-180px] -mb-24" src="img/plataforma.png" alt="Imagem de um smartphone exibindo a plataforma da Forja na tela">
+      <div class="w-full sm:w-2/5">
+        <img class="mx-auto w-48 sm:w-full sm:mt-[-180px] -mb-24" src="img/plataforma.png" alt="Imagem de um smartphone exibindo a plataforma da Forja na tela">
       </div>
 
     </div>
@@ -752,19 +752,19 @@
 
 <!-- FAQ -->
 <section id="faq" class="mt-40">
-  <h1 class="text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl text-white font-medium text-center tracking-tight opacity-0 intersect:animate-fade-up animate-once animate-delay-100 intersect-once intersect-full">
     Dúvidas<br>
     <span class="bg-gradient-to-t from-primary to-white text-transparent bg-clip-text">
       frequentes
     </span>
   </h1>
 
-  <div class="relative mx-auto max-w-[800px] h-auto my-20 opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
+  <div class="relative mx-auto max-w-[800px] h-auto my-10 md:my-20 opacity-0 intersect:animate-fade-up animate-once animate-delay-300 intersect-once">
     
     <!-- Pergunta 1 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Posso pedir meu dinheiro de volta se eu não gostar do conteúdo?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Posso pedir meu dinheiro de volta se eu não gostar do conteúdo?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -774,8 +774,8 @@
     
     <!-- Pergunta 2 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Posso fazer a formação se eu ainda não for líder?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Posso fazer a formação se eu ainda não for líder?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -785,8 +785,8 @@
     
     <!-- Pergunta 3 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Quando começa o treinamento?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Quando começa o treinamento?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -796,8 +796,8 @@
     
     <!-- Pergunta 4 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Posso fazer o treinamento se eu for líder de QA, Infra, Segurança etc.?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Posso fazer o treinamento se eu for líder de QA, Infra, Segurança etc.?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -807,8 +807,8 @@
     
     <!-- Pergunta 5 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Por quanto tempo terei acesso à Escola Forja?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Por quanto tempo terei acesso à Escola Forja?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -818,8 +818,8 @@
     
     <!-- Pergunta 6 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Vou receber certificado de conclusão?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Vou receber certificado de conclusão?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -829,8 +829,8 @@
     
     <!-- Pergunta 7 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">As aulas ficarão gravadas?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">As aulas ficarão gravadas?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -840,8 +840,8 @@
     
     <!-- Pergunta 8 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Tenho desconto ao inscrever várias pessoas?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Tenho desconto ao inscrever várias pessoas?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -851,8 +851,8 @@
     
     <!-- Pergunta 9 -->
     <div class="set border-b border-gray-400 relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Posso parcelar a inscrição?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Posso parcelar a inscrição?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -862,8 +862,8 @@
     
     <!-- Pergunta 10 -->
     <div class="set relative w-full h-auto text-white hover:bg-neutral-900 transition duration-300 ">
-      <a class="flex place-content-between px-6 py-10 transition duration-300 cursor-pointer group">
-        <span class="text-lg font-light">Preciso ter limite no cartão no valor da inscrição?</span>
+      <a class="flex place-content-between px-6 py-6 md:py-10 transition duration-300 cursor-pointer group">
+        <span class="text-md md:text-lg font-light">Preciso ter limite no cartão no valor da inscrição?</span>
         <img class="faq-arrow group-hover:mr-6 group-[.active]:mr-6 group-hover:brightness-0 group-hover:invert group-[.active]:brightness-0  group-[.active]:invert group-[.active]:-rotate-90 transition-all duration-300" src="img/arrow-right.svg">
       </a>
       <div class="content hidden px-6 pb-6 text-gray-400">
@@ -876,7 +876,7 @@
 
 <!-- Rodapé -->
 <footer class="w-full bg-[#0A0C0F] py-12">
-  <div class="max-w-screen-xl mx-auto flex place-content-between">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap place-content-between px-6 gap-y-6">
     <div class="flex grow items-center">
       <img class="mr-8" src="img/forja-simbolo.svg" alt="Símbolo da Escola Forja">
       <div class="flex flex-col text-white font-light text-sm gap-y-2">
@@ -885,7 +885,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col gap-y-4">
+    <div class="w-full sm:w-2/5 flex flex-col gap-y-4 sm:items-end">
       <h3 class="text-white text-lg">Siga nossas redes sociais</h3>
       <div class="flex gap-x-3">
         <a href="" target="_blank" class="hover:scale-110 hover:brightness-150 transition duration-300 ease-in-out">
@@ -925,7 +925,6 @@
           breakpoint: 1024,
           settings: {
           slidesToShow: 2,
-          infinite: true
           }
       },
       {
@@ -953,11 +952,10 @@
           breakpoint: 1024,
           settings: {
           slidesToShow: 2,
-          infinite: true
           }
       },
       {
-          breakpoint: 767,
+          breakpoint: 640,
           settings: {
           slidesToShow: 1,
           }
@@ -983,6 +981,23 @@
           .slideDown(200);
       }
     });
+  });
+
+  // Mobile menu
+  document.addEventListener('DOMContentLoaded', function() {
+      // open
+      const burger = document.querySelectorAll('.navbar-burger');
+      const menu = document.querySelectorAll('.main-menu');
+
+      if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener('click', function() {
+                  for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle('!max-h-screen');
+                  }
+              });
+          }
+      }
   });
 
  </script>
