@@ -1899,6 +1899,14 @@ div.slick-dotted.slick-slider {
     margin-top: 8rem;
   }
 
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
