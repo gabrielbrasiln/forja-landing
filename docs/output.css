@@ -767,6 +767,10 @@ video {
   height: 6rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -781,10 +785,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .\!max-h-screen {
@@ -1211,10 +1211,6 @@ video {
 
 .pr-6 {
   padding-right: 1.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .pt-10 {
@@ -1923,8 +1919,16 @@ div.slick-dotted.slick-slider {
     height: 4rem;
   }
 
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
   .lg\:h-96 {
     height: 24rem;
+  }
+
+  .lg\:h-6 {
+    height: 1.5rem;
   }
 
   .lg\:max-h-screen {
