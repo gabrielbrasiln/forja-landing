@@ -1300,12 +1300,24 @@ video {
   line-height: 1.375;
 }
 
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
 
 .tracking-widest {
-  letter-spacing: .25em;
+  letter-spacing: 0.1em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-black {
@@ -1923,12 +1935,12 @@ div.slick-dotted.slick-slider {
     height: 1.25rem;
   }
 
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
   .lg\:h-6 {
     height: 1.5rem;
+  }
+
+  .lg\:h-96 {
+    height: 24rem;
   }
 
   .lg\:max-h-screen {

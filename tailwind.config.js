@@ -18,9 +18,6 @@ module.exports = {
       backgroundImage: {
         'hero': "url('./img/bg-hero.jpg')",
       },
-      letterSpacing: {
-        widest: '.25em',
-      }
     },
   },
   plugins: [
