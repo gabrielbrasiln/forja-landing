@@ -1296,24 +1296,16 @@ video {
   text-transform: uppercase;
 }
 
-.leading-snug {
-  line-height: 1.375;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
 .leading-5 {
   line-height: 1.25rem;
 }
 
-.tracking-tight {
-  letter-spacing: -0.025em;
+.leading-snug {
+  line-height: 1.375;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .tracking-wide {
@@ -1365,11 +1357,6 @@ video {
 
 .blur {
   --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.saturate-0 {
-  --tw-saturate: saturate(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1641,11 +1628,6 @@ div.slick-dotted.slick-slider {
 
 .group:hover .group-hover\:invert {
   --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.group:hover .group-hover\:saturate-100 {
-  --tw-saturate: saturate(1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
