@@ -1722,6 +1722,14 @@ div.slick-dotted.slick-slider {
     width: 100%;
   }
 
+  .sm\:w-40 {
+    width: 10rem;
+  }
+
+  .sm\:w-60 {
+    width: 15rem;
+  }
+
   .sm\:max-w-\[350px\] {
     max-width: 350px;
   }
